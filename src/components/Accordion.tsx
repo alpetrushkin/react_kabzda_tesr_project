@@ -7,22 +7,32 @@ interface AccordionPropsType {
 
 export function Accordion(props: AccordionPropsType) {
    console.log("Accordion rendering")
-   if (props.collapsed === true) {
-      return (
-         <div>
-            <AccordionTitle  titleValue={props.title}/>
-            <AccordionBody  />
-         </div>
-      )
-   } else {
-      return (
-         <div>
-            <AccordionTitle titleValue={props.title}/>
-         </div>
-      )
-   }
 
+   return (
+      <div>
+         <AccordionTitle titleValue={props.title}/>
+         {!props.collapsed && <AccordionBody  />}
+      </div>
+   )
 }
+
+// export function Accordion1(props: AccordionPropsType) {
+//    console.log("Accordion rendering")
+//    if (props.collapsed === true) {
+//       return (
+//          <div>
+//             <AccordionTitle titleValue={props.title}/>
+//          </div>
+//       )
+//    } else {
+//       return (
+//          <div>
+//             <AccordionTitle titleValue={props.title}/>
+//             <AccordionBody  />
+//          </div>
+//       )
+//    }
+// }
 
 interface AccordionTitlePropsType {
    titleValue: string
