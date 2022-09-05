@@ -6,7 +6,7 @@ interface AccordionPropsType {
 }
 
 export function Accordion(props: AccordionPropsType) {
-   console.log("Accordion rendering")
+   console.log("UncontrolledAccordion rendering")
 
    return (
       <div>
@@ -17,7 +17,7 @@ export function Accordion(props: AccordionPropsType) {
 }
 
 // export function Accordion1(props: AccordionPropsType) {
-//    console.log("Accordion rendering")
+//    console.log("UncontrolledAccordion rendering")
 //    if (props.collapsed === true) {
 //       return (
 //          <div>

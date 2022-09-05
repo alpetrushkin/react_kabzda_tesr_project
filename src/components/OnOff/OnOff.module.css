@@ -1,0 +1,21 @@
+.body{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 15px;
+}
+
+.indicator{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.onIndicator{
+    margin-right: 5px;
+    border: 1px solid green;
+}
+
+.offIndicator{
+    border: 1px solid red;
+}

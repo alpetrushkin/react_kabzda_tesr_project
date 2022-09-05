@@ -5,7 +5,7 @@ interface RatingType {
 }
 
 export function Rating(props: RatingType) {
-   console.log("Rating rendering")
+   console.log("UncontrolledRating rendering")
 
    return (
       <div>
@@ -24,7 +24,7 @@ interface StarPropsType {
 
 function Star(props: StarPropsType) {
    console.log("Star rendering")
-   if (props.selected === true) {
+   if (props.selected) {
       return <span><b>star</b> </span>
    } else {
       return <span>star </span>
